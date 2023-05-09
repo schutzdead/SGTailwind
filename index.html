@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Connexion | StadiumGO</title>
+    <link rel="stylesheet" href="/SGTailwind/assets/index-95b2192d.css">
+  </head>
+  <body>
+    <header class="h-10v w-full bg-white flex items-center sticky top-0 z-10 border-b-4 border-neutralLine box-border l:justify-center">
+      <img src="foot.png" alt="" class="h-5v ml-5w l:ml-0r">
+    </header>
+    <main class="h-65v  w-full flex items-center justify-center bg-neutralColor text-textBlack hm:h-auto phone:h-auto">
+      <div class="bg-white w-[500px] p-2.5 rounded-lg flex flex-col gap-2.5 items-center justify-center hm:my-3r s:w-10/12 phone:my-3r">
+        <h1 class="my-2r mx-2.5r font-bold hm:mt-1.25r l:whitespace-nowrap phone:mt-1.25r">On va au stade <span class="float-right pl-2.5 animate-[3s_infinite_rotateSpan]">?</span></h1>
+        <div class="flex flex-col gap-5 w-4/6 phone:w-10/12">
+          <div class="bg-bgField text-textBlack flex flex-col gap-2.5 rounded-lg font-medium text-sm">
+            <label for="email" class="pt-2.5 pl-4">Email*</label>
+            <input  class="bg-bgField mb-0.625r ml- w-11/12 pl-2.5 focus:outline-0 placeholder:text-xs phone:text-base" type="email" id="email" placeholder="exemple@exemple.fr"/>
+          </div>
+          <div class="bg-bgField text-textBlack flex flex-col gap-2.5 rounded-lg font-medium text-sm">
+            <label class="pt-2.5 pl-4" for="mdp">Mot de passe*</label>
+            <input class="bg-bgField mb-0.625r ml- w-11/12 pl-2.5 focus:outline-0 placeholder:text-xs phone:text-base" type="password" id="mdp" placeholder="8 caractères minimum"/>
+          </div>
+        </div>
+        <button class="bg-white border-2 border-stadiumGreen/70 text-textBlack py-2 px-5 my-1.25r rounded-xl cursor-pointer hover:scale-105">Connexion</button>
+        <div class="text-xs flex flex-col items-center gap-2.5 text-stadiumGreen font-medium cursor-pointer mb-2r hm:mb-1.25r phone:mb-1.25r">
+          <p>Mot de passe oublié ?</p>
+          <p>S'inscrire</p>
+        </div>
+      </div>
+    </main>
+    <footer class="h-25v w-full bg-stadiumGreen flex flex-col items-center justify-between text-white l:gap-12 l:h-auto hm:h-auto hl:h-auto">
+        <div class="grid grid-rows-1 grid-cols-4 justify-items-center text-sm mt-4v w-11/12 l:grid-cols-2 l:gap-y-12 s:w-full">
+          <div class="flex flex-col gap-5">
+            <h2 class="font-bold whitespace-nowrap phone:text-sm">ASSISTANCE</h2>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Foire aux questions</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Nous contacter</div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="font-bold whitespace-nowrap phone:text-sm">LIENS UTILES</h2>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Découvrir les stades</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Proposer un covoiturage</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Rechercher un covoiturage</div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="font-bold whitespace-nowrap phone:text-sm phone:text-sm">A PROPOS</h2>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">StadiumGO PRO</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">On parle de nous</div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="font-bold whitespace-nowrap phone:text-sm phone:text-sm">INFORMATIONS LEGALES</h2>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Charte de confidentialité</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Conditions générales</div>
+            <div class="cursor-pointer hover:scale-105 whitespace-nowrap phone:text-sm">Mentions légales</div>
+          </div>
+        </div>
+        <div class="flex justify-between w-full items-center text-[13px] phone:flex-col gap-2.5">
+          <div class="pb-2.5 pl-8 phone:pl-0">© StadiumGO 2023 - Aller au stade, en mieux</div>
+          <div class="flex gap-2.5 pr-8 pb-2.5 phone:p-0 phone:mb-2r">
+            <img src="facebook.svg" alt="" class="cursor-pointer">
+            <img src="instagram.svg" alt="" class="cursor-pointer">
+            <img src="linkedin.svg" alt="" class="cursor-pointer">
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
