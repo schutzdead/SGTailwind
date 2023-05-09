@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     screens: {
-      'phone': {'max': '550px'},
+      'l': {'max': '800px'},
       's': {'max': '700px'},
+      'phone': {'max': '550px'},
       'hm': {'raw': '(max-height: 750px)'},
       'hl': {'raw': '(max-height: 850px)'},
-      'l': {'max': '800px'},
     },
     extend: {
       keyframes: {
@@ -16,6 +19,9 @@ module.exports = {
           '10%': { transform: 'rotate(360deg)' },
           '100%': { transform: 'rotate(360deg)' },
         }
+      },
+      fontFamily: {
+        'sans': ['Raleway', ...defaultTheme.fontFamily.sans],
       },
     },
     height: {
@@ -34,6 +40,7 @@ module.exports = {
       "2.5r": "2.5rem",
       "1.25r": "1.25rem",
       "0.625r": "0.625rem",
+      "0.5r": "0.5rem",
       "3r" : "3rem"
     },
     colors :{
